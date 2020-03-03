@@ -11,7 +11,6 @@ const IndexPage = () => (
       <Header />
       <Footer />
     </section>
-    <PageFooter />
   </Layout>
 );
 

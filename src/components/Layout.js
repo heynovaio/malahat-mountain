@@ -10,18 +10,26 @@ class Layout extends Component {
     super();
     this.state = {
       isPreloaded: true,
+      show: true
     };
   }
 
+  showModal  = () => {
+    this.setState({ show: true });
+  }
+
+  hideModal = () => {
+    this.setState({ show: false, isPreloaded: false });
+  }
+
   componentDidMount() {
-    setTimeout(() => {
-      this.setState({ isPreloaded: false });
-    }, 1000);
+
   }
 
   render() {
     const { children } = this.props;
     const { isPreloaded } = this.state;
+    const { show } = this.state;
     return (
       <StaticQuery
         query={graphql`
@@ -44,6 +52,16 @@ class Layout extends Component {
             >
               <html lang="en" />
             </Helmet>
+            {this.state.show &&
+              <div className="modal">
+                <h2>Adults welcome, young and old</h2>
+                <p>Are you over 19?</p>
+                <div className="buttons">
+                  <button className="yes" onClick={this.hideModal}>Yes</button>
+                  <a href="https://en.wikipedia.org/wiki/Malahat,_British_Columbia" target="_blank" className="no">No</a>
+                </div>
+              </div>
+            }
             <div className={isPreloaded ? 'main-body is-preload' : 'main-body'}>
               <div id="wrapper">{children}</div>
             </div>

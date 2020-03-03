@@ -13,7 +13,6 @@
 		font-weight: _font(weight);
 		line-height: 2;
 		letter-spacing: _size(letter-spacing);
-		text-transform: uppercase;
 
 		@include breakpoint('<=xlarge') {
 			font-size: 11pt;
@@ -72,6 +71,13 @@
 		font-size: 1.85em;
 		letter-spacing: (_size(letter-spacing) * 1.1);
 		margin: 0 0 (_size(element-margin) * 0.35) 0;
+		font-family: objektiv-mk1, sans-serif;
+	  font-size: 56px;
+	  font-weight: bold;
+	  line-height: 70px;
+	  letter-spacing: 0.56px;
+	  text-align: center;
+	  color: #ffffff;
 	}
 
 	h2 {
