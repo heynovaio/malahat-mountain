@@ -14,10 +14,6 @@ class Layout extends Component {
     };
   }
 
-  showModal  = () => {
-    this.setState({ show: true });
-  }
-
   hideModal = () => {
     this.setState({ show: false, isPreloaded: false });
   }
@@ -54,11 +50,10 @@ class Layout extends Component {
             </Helmet>
             {this.state.show &&
               <div className="modal">
-                <h2>Adults welcome, young and old</h2>
-                <p>Are you over 19?</p>
+                <h2>Are you legal age in your province?</h2>
                 <div className="buttons">
                   <button className="yes" onClick={this.hideModal}>Yes</button>
-                  <a href="https://en.wikipedia.org/wiki/Malahat,_British_Columbia" target="_blank" className="no">No</a>
+                  <a href="https://en.wikipedia.org/wiki/Malahat,_British_Columbia" target="_blank" rel="noopener noreferrer" className="no">No</a>
                 </div>
               </div>
             }

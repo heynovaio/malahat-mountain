@@ -45,7 +45,7 @@ html {
 }
 
 .main-body {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #000;
   background-image: url("../images/malahat-bg.jpg");
   background-repeat: no-repeat;
@@ -55,11 +55,11 @@ html {
   filter: blur(0);
   transition: all .25s;
   &:before {
-    height: 3px;
+    height: 6px;
     width: 100%;
     background: #F2D954;
     content: '';
-    top: 40px;
+    top: 0px;
     position: absolute;
     z-index: 3;
   }
@@ -74,19 +74,11 @@ html {
     opacity: 0;
     z-index: 1;
 
-    background-color: rgba(0,0,0,0.4);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-
     @include vendor('transition', 'opacity #{_duration(bg)} ease-out');
   }
 
   &.is-preload {
-    filter: blur(5px);
-    &:before {
-      display:none;
-    }
+    filter: brightness(0.35) blur(15px);
     &:after {
       opacity: 1;
     }

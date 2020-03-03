@@ -24,7 +24,7 @@
 		background-color: transparent;
 		border-radius: _size(border-radius);
 		border: solid 1px _palette(border);
-		color: _palette(fg) !important;
+		color: _palette(bg);
 		cursor: pointer;
 		text-align: center;
 		text-decoration: none;
@@ -32,7 +32,6 @@
 
 		&:hover {
 			border-color: _palette(highlight);
-			color: _palette(highlight) !important;
 		}
 
 		&.icon {

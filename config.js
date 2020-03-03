@@ -13,11 +13,6 @@ module.exports = {
       icon: 'fa-instagram',
       name: 'Instagram',
       url: '',
-    },
-    {
-      icon: 'fa-envelope-o',
-      name: 'Email',
-      url: '',
-    },
+    }
   ],
 };

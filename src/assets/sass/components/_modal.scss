@@ -9,38 +9,49 @@
   max-width: 394px;
   width: 100%;
   text-align: center;
-  padding: 30px 20px;
+  padding: 38px 20px 20px;
   border-radius: 15px;
   h2 {
     font-family: objektiv-mk1, sans-serif;
     font-size: 34px;
     font-weight: bold;
     line-height: 40px;
-    letter-spacing: 0.34px;
+    letter-spacing: .65px;
+    max-width: 347px;
+    margin-bottom: 40px;
     text-align: center;
     color: #0c584c;
     text-transform: none;
   }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
   button.yes {
     border-radius: 5px;
-    background-color: #f2d954;
     border: none;
     font-family: objektiv-mk1, sans-serif;
     font-size: 17px;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.17px;
     text-align: center;
-    color: #02584c;
-    margin-right: 10px;
+    background: #02584c;
+    color: #fff;
+    width: 48%;
+    &:hover {
+      color: #f2d954;
+    }
   }
   a.no {
     border-radius: 5px;
-    border: 2px solid #f2d954;
+    border: none;
+    background-color: #f2d954;
+    color: #02584c;
     display: inline-block;
     font-family: objektiv-mk1, sans-serif;
     font-size: 17px;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.17px;
     text-align: center;
@@ -49,5 +60,6 @@
     line-height: 2.75em;
     padding: 0 1.5em;
     text-transform: capitalize;
+    width: 48%;
   }
 }

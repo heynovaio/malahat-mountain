@@ -78,6 +78,13 @@
 	  letter-spacing: 0.56px;
 	  text-align: center;
 	  color: #ffffff;
+	  @include breakpoint('<=medium') {
+	  	font-size: 40px;
+	  	line-height: 1.2;
+	  }
+	   @include breakpoint('<=small') {
+	   	font-size: 36px;
+	   }
 	}
 
 	h2 {
