@@ -12,7 +12,7 @@ module.exports = {
     {
       icon: 'fa-instagram',
       name: 'Instagram',
-      url: '',
+      url: 'https://www.instagram.com/malahatmountaincannabisco/',
     }
   ],
 };

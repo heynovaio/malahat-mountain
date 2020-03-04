@@ -11,6 +11,9 @@
   text-align: center;
   padding: 38px 20px 20px;
   border-radius: 15px;
+  @include breakpoint('<=medium') {
+    width: 94%;
+  }
   h2 {
     font-family: objektiv-mk1, sans-serif;
     font-size: 34px;

@@ -56,14 +56,4 @@
 				}
 			}
 		}
-
-		@include breakpoint('<=xsmall') {
-			li {
-				a {
-					&:before {
-						font-size: 1.5rem;
-					}
-				}
-			}
-		}
 	}

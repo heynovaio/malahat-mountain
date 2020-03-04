@@ -45,7 +45,7 @@ html {
 }
 
 .main-body {
-  min-height: 100vh;
+  height: 100vh;
   background-color: #000;
   background-image: url("../images/malahat-bg.jpg");
   background-repeat: no-repeat;
@@ -78,7 +78,7 @@ html {
   }
 
   &.is-preload {
-    filter: brightness(0.35) blur(15px);
+    filter: brightness(0.5) blur(10px);
     &:after {
       opacity: 1;
     }

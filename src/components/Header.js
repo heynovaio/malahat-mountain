@@ -9,7 +9,7 @@ export default function Footer() {
       <span className="avatar">
         <img height="194px" src={pic} srcSet={pic2x} alt="" />
       </span>
-      <h1>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</h1>
+
     </header>
   );
 }
